@@ -102,6 +102,14 @@ export default {
             transform: 'scale(1.02)' 
           },
         },
+        'slide-in-right': {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        'hover-float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5px)' },
+        },
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -109,6 +117,8 @@ export default {
         'glow': 'glow 2s ease-in-out infinite',
         'fade-in': 'fade-in 0.5s ease-out',
         'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+        'slide-in-right': 'slide-in-right 0.3s ease-out',
+        'hover-float': 'hover-float 3s ease-in-out infinite',
 			}
 		}
 	},
